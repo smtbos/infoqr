@@ -168,10 +168,11 @@ include("_header.php");
                                                     <td><?php echo $row['i_id']; ?></td>
                                                     <td><?php echo $row['i_information']; ?></td>
                                                     <td><?php echo $row['i_views']; ?></td>
-                                                    <td><img src="<?php echo $path_to_qr . $row['i_qr']; ?>" width="150" /></td>
+                                                    <td><img src="<?php echo $path_to_qr . $row['i_qr']; ?>" width="150" height="150" /></td>
                                                     <td>
                                                         <a href="informations.php?edit=<?php echo $row['i_id']; ?>" class="btn btn-primary">Edit</a><br>
-                                                        <a href="printqr.php?qr=<?php echo $row['i_qr']; ?>" class="btn btn-primary mt-2">Print QR</a>
+                                                        <a href="printqr.php?qr=<?php echo $path_to_qr . $row['i_qr']; ?>" target="_blank" class="btn btn-primary mt-2">Print QR</a><br>
+                                                        <a href="views.php?information=<?php echo  $row['i_id']; ?>" class="btn btn-primary mt-2">View Logs</a>
                                                     </td>
                                                 </tr>
                                         <?php

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Info QR</string>
+    <string name="API_ENDPOINT">http://192.168.136.193:8080/infoqr/API/</string>
 </resources>
