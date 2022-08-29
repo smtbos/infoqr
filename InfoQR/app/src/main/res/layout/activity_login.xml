@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
     tools:context=".LoginActivity">
 
     <RelativeLayout
@@ -50,6 +49,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:text="Login"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_goto_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:text="Goto Register"
             android:textStyle="bold" />
     </RelativeLayout>
 

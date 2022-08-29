@@ -22,6 +22,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -163,6 +164,13 @@ public class ScanQrActivity extends AppCompatActivity {
             }
         });
         codeScanner.startPreview();
+
+        codeScannerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                codeScanner.startPreview();
+            }
+        });
     }
 
     private String getInfoUrl(String uid) {

@@ -4,8 +4,8 @@ date_default_timezone_set("Asia/Kolkata");
 
 // Connection
 try {
-    // $pdo = new PDO("mysql:host=localhost;dbname=smtbos_infoqr", "smit", "&tD9XpV44dvgkvex");
-    $pdo = new PDO("mysql:host=localhost;dbname=infoqr", "root", "");
+    $pdo = new PDO("mysql:host=localhost;dbname=smtbos_infoqr", "smit", "&tD9XpV44dvgkvex");
+    // $pdo = new PDO("mysql:host=localhost;dbname=infoqr", "root", "");
 } catch (Exception $e) {
     echo $e->getMessage();
     exit();

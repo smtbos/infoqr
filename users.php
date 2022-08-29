@@ -85,6 +85,9 @@ include("_header.php");
         <div class="container-fluid">
             <div class="row">
                 <section class="col-12">
+                    <?php
+                    /*
+                    ?>
                     <form action="" method="post">
                         <div class="card">
                             <div class="card-header">
@@ -141,6 +144,9 @@ include("_header.php");
                             </div>
                         </div>
                     </form>
+                    <?php
+                    */
+                    ?>
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">
@@ -162,7 +168,8 @@ include("_header.php");
                                             <th>Name</th>
                                             <th>Username</th>
                                             <th>Password</th>
-                                            <th>Action</th>
+                                            <th>Mobile & Email</th>
+                                            <th>City & Address</th>
                                         </tr>
                                         <?php
                                         $stmt = $pdo->prepare("SELECT * FROM users");
@@ -175,9 +182,8 @@ include("_header.php");
                                                     <td><?php echo $row['u_name']; ?></td>
                                                     <td><?php echo $row['u_username']; ?></td>
                                                     <td><?php echo $row['u_password']; ?></td>
-                                                    <td>
-                                                        <a href="users.php?edit=<?php echo $row['u_id']; ?>" class="btn btn-primary">Edit</a>
-                                                    </td>
+                                                    <td><?php echo $row['u_mobile'] . '<br>' . $row['u_email']; ?></td>
+                                                    <td><?php echo $row['u_city'] . '<br>' . $row['u_address']; ?></td>
                                                 </tr>
                                         <?php
                                             }
